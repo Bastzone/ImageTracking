@@ -56,7 +56,11 @@
       </div>
 
       <!-- a-frame scene -->
-      <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+      <a-scene
+        vr-mode-ui="enabled: false;"
+        renderer="logarithmicDepthBuffer: true;"
+        embedded
+        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
           
             <a-assets>
                         <a-asset-item id="Model_Asset_obj_0" src="models/Facebook Button.obj"></a-asset-item>
